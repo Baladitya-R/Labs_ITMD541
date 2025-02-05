@@ -1,0 +1,22 @@
+body{
+    background-color: beige;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 5px solid red;
+    min-height: 100vh;
+}
+
+.name
+{
+    text-align: center;
+}
+.upper-box
+{
+    background-color: blue;
+    color: white;
+}
+.lower-box
+{
+    background-color: red;
+    color: white;
+}
