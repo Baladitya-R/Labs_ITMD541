@@ -1,22 +1,33 @@
-body{
+body {
     background-color: beige;
-    padding-left: 30px;
-    padding-right: 30px;
-    border: 5px solid red;
-    min-height: 100vh;
+    padding-top: 35px;
 }
 
-.name
-{
+.name {
     text-align: center;
+    color:  greenyellow;
 }
+
+.container {
+    background-color: #001F3E;
+    margin-top: 30px;
+    height: max-content;
+    padding-bottom: 30px;
+    width: 30%;
+    border: 10px solid greenyellow;
+    padding-left: 25px;
+    padding-top: 12px;
+    margin: 0 auto; /* Centers the container horizontally */
+}
+
 .upper-box
 {
-    background-color: blue;
     color: white;
+    margin-top: 40px;
 }
+
 .lower-box
 {
-    background-color: red;
-    color: white;
+    color:white;
+    margin-bottom: 40px
 }
