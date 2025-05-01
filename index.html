@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>LAB I</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunrise & Sunset Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1 class="name">Baladitya Retta</h1>
-        <div class="upper-box">
-            <h2>Introduction</h2>
-            <p>I am from India, Andhrapradesh, I am living in Illinois since August 2023. I enjoy Traveling and hanging out with family and friends.</p>
-            <p>I am intrested in the following hobbies</p>
-            <ol>
-                <li>Playing Badminton</li>
-                <li>playing chess</li>
-            </ol>
-       
-        </div>
-        <div class="lower-box">
-            <h2>Education</h2>
-            <p>I have achieved the following in terms of Education:</p>
-            <ul>
-                <li>Batchelor of Technology (mechanical engineer)</li>
-                <li>Master of Technology (Advanced manufacturing systems)</li>
-                <li>Doing masters ITManagement (Current)</li>
-            </ul>
-        </div>
-    </div>
+  <header>
+    <div class="lab-title">ITMD 541 - Lab 6</div>
+    <h1><i class="fas fa-sun"></i> Sunrise & Sunset Dashboard</h1>
+    <p>Discover the beauty of each day</p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <label for="locationSelect">Select a location:</label>
+      <select id="locationSelect">
+        <!-- Drop Down options -->
+        <option value="" disabled selected>Choose a location</option>
+        <option value="35.2271,-80.8431">Charlotte, NC</option>
+        <option value="36.1627,-86.7816">Nashville, TN</option>
+        <option value="44.9778,-93.2650">Minneapolis, MN</option>
+        <option value="39.9612,-82.9988">Columbus, OH</option>
+        <option value="43.0389,-87.9065">Milwaukee, WI</option>
+        <option value="32.7765,-79.9311">Charleston, SC</option>
+        <option value="36.7468,-119.7726">Fresno, CA</option>
+        <option value="41.8240,-71.4128">Providence, RI</option>
+        <option value="30.2672,-97.7431">Austin, TX</option>
+        <option value="33.4255,-111.9400">Tempe, AZ</option>
+      </select>
+      <button id="useLocationBtn"><i class="fas fa-location-arrow"></i> Use My Location</button>
+    </section>
+
+    <section id="dashboard">
+      <div id="loading">Select a location or use your location to fetch data.</div>
+      <div id="results" class="hidden">
+        <div class="day-section" id="today"></div>
+        <div class="day-section" id="tomorrow"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Powered by <a href="https://sunrisesunset.io/api/" target="_blank">sunrisesunset.io</a></p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
